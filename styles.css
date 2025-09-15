@@ -114,8 +114,8 @@ button:hover {
 }
 
 .fade-in-img {
-  width: 50%;
-  height: auto;
+  width: 30%;
+  height: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(219, 77, 77, 0.733);
   opacity: 0; /* starts invisible */
