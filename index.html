@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive CSS + JS Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive CSS & JavaScript Showcase</h1>
+    <p>A mini project demonstrating transitions, animations, and JavaScript logic.</p>
+  </header>
+
+  <!-- ========== PART 1: CSS ANIMATIONS ========== -->
+  <section class="section">
+    <h2>Part 1: CSS Transitions & Keyframe Animations</h2>
+
+    <div class="row">
+      <button class="btn transition-btn">Hover Me</button>
+
+      <div class="animated-box" title="Hover me"></div>
+    </div>
+
+    <div class="section image-container">
+      <img src="https://images.pexels.com/photos/1181703/pexels-photo-1181703.jpeg" alt="Sample image" class="fade-in-img" />
+      <p class="caption">Captured in the moment</p>
+    </div>
+
+    <div class="row animated-shapes">
+      <div class="bouncing-ball"></div>
+      <div class="heart-shape"></div>
+    </div>
+  </section>
+  
+
+  <!-- ========== PART 2: JAVASCRIPT FUNCTIONS ========== -->
+  <section class="section alt-section">
+    <h2>Part 2: JavaScript Functions, Parameters & Scope</h2>
+
+    <div class="function-block">
+      <label for="a">Number 1:</label>
+      <input type="number" id="a" value="7" />
+      <label for="b">Number 2:</label>
+      <input type="number" id="b" value="3" />
+      <button onclick="displaySum()">Calculate Sum</button>
+      <p class="output" id="sum-output">Sum: </p>
+    </div>
+
+    <div class="function-block">
+      <button onclick="randomizeColor()">Randomize Box Color</button>
+    </div>
+  </section>
+
+  <!-- ========== PART 3: JS + CSS INTERACTIONS ========== -->
+  <section class="section">
+    <h2>Part 3: JavaScript Triggering CSS Animations</h2>
+
+    <div class="trigger-area">
+      <div class="trigger-box" id="trigger-box"></div>
+      <div class="controls">
+        <button onclick="startBoxAnimation()">Start</button>
+        <button onclick="stopBoxAnimation()">Stop</button>
+        <button onclick="toggleModal()">Toggle Modal</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Component -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="toggleModal()">&times;</span>
+      <h3>Modal Activated</h3>
+      <p>This modal slides in and fades out using JS-triggered CSS.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💙 for CSS & JS Practice</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
